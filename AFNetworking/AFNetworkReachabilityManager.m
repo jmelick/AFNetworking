@@ -23,7 +23,7 @@
 #if !TARGET_OS_WATCH
 
 #import <netinet/in.h>
-#import <netinet6/in6.h>
+// #import <netinet6/in6.h> — private header in iOS 18+/Xcode 16+ SDKs; netinet/in.h (imported above) already provides these declarations.
 #import <arpa/inet.h>
 #import <ifaddrs.h>
 #import <netdb.h>
